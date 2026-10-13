@@ -11,13 +11,23 @@
 // const newOne = moduleone.greetings();
 // console.log(newOne);
 
-
+document.addEventListener("DOMContentLoaded" , ()=> {
 const newModule = {
-    name:"kumar",
-    greet(){
-        return this.name;
+    name: "kumar",
+    greet(a, b) {
+        var c = a + b;
+        return {
+            name: this.name,
+            sum: c
+        };
     }
-}
+};
+const newBtn = document.querySelector(".newClass");
+newBtn.addEventListener("click", ()=> {
+      alert(newOne.sum);
+})
 
-const newOne = newModule.greet();
-console.log(newOne);
+const newOne = newModule.greet(10, 20);
+console.log(newOne.name);
+console.log(newOne.sum);
+});
