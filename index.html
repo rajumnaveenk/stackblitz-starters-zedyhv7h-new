@@ -5,7 +5,7 @@
     <meta charset="UTF-8" />
     <meta name="viewport" content="width=device-width" />
     <link rel="stylesheet" href="styles.css" />
-     <script src="instance_methods/Destructuring_Objects.js"></script>
+     <script src="instance_methods/fetch.js"></script>
   </head>
   <body>
 
@@ -18,7 +18,10 @@
     const newBtn = document.querySelector(".newClass");
 
     newBtn.addEventListener("click" , ()=> {
-      alert("hello");
+       const newText_one = document.getElementById("newText");
+      const newBtn =  newText_one.textContent = "new world!!!";
+      newText_one.style.color = "red";
+      newText_one.style.fontSize = "50px";
     })
 
    </script>
